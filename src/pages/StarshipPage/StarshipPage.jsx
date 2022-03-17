@@ -15,10 +15,16 @@ const StarshipDetails = () => {
 
   return ( 
     <>
-      <h3>Starship Page</h3>
-      <h4>Name: {starshipDetails.name}</h4>
-      <h4>Model: {starshipDetails.model}</h4>
-      <Link  to="/">Return</Link><br/>
+     <h2>{starshipDetails.name}</h2>
+      <div className = "details">
+        <h4>Name: {starshipDetails.name}</h4>
+        <h4>Model: {starshipDetails.model}</h4>
+        <h4>Length: {starshipDetails.length} m</h4>
+        <h4>Crew: {starshipDetails.crew}</h4>
+      </div>
+      <div className = "return">
+        <Link className="return-link" to="/">Return</Link><br/>
+      </div>
     </>
   );
 }
